@@ -4,9 +4,11 @@ import "./Hello.css";
 export interface IWelcomeProps {
   name: string;
   enthusiasmLevel?: number;
+  onIncrement?: () => void;
+  onDecrement?: () => void;
 }
 
-export function Hello({ name, enthusiasmLevel = 1 }: IWelcomeProps) {
+export function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: IWelcomeProps) {
   if (enthusiasmLevel <= 0) {
     throw new Error("You could be a little more enthusiastic. :D");
   }
@@ -15,6 +17,10 @@ export function Hello({ name, enthusiasmLevel = 1 }: IWelcomeProps) {
     <div className="hello">
       <div className="greeting">
         Hello {name + getExclamationMarks(enthusiasmLevel)}
+        <div>
+          <button onClick={onDecrement}>-</button>
+          <button onClick={onIncrement}>+</button>
+        </div>
       </div>
     </div>
   );

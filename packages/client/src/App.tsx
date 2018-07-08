@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./App.css";
-import { Hello } from "./components/hello/Hello";
+import HelloContainer from "./components/hello/HelloContainer";
 
 import logo from "./logo.svg";
 
@@ -36,7 +36,7 @@ class App extends React.Component {
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
         <p className="App-intro">{this.state.response}</p>
-        <Hello name="Tada" enthusiasmLevel={10} />
+        <HelloContainer />
       </div>
     );
   }
