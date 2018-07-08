@@ -1,0 +1,22 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["es2016", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "pretty": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es6",
+    "strict": true
+  }
+}
