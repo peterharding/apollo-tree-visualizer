@@ -1,9 +1,15 @@
 {
   "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../build"
+    "lib": [
+      "esnext.asynciterable",
+      "es2016",
+    ],
+    "noUnusedParameters": false,
+    "outDir": "../build",
   },
   "include": [
     "./**/*.ts"
   ],
+
 }
